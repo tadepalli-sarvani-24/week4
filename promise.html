@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+         let myFirstPromise = new Promise((resolve, reject) => {
+         setTimeout( function() {
+         resolve("Successfully executed")  
+         }, 250)
+         })
+         myFirstPromise.then((successMessage) => {
+         console.log("Done " + successMessage)
+        });
+        let promise = new Promise(function(resolve, reject) {
+        setTimeout(() => resolve("done!"), 1000);
+          });
+        promise.then(
+        result => alert(result),
+        error => alert(error) 
+        );
+</script>
+</body>
+  </html>
